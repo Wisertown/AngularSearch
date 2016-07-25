@@ -8,7 +8,6 @@ function getInfo(){
 $http.get('cardetails.php').success(function(data){
 // Stored the returned data into scope
 $scope.details = data;
-console.log(data);
 });
 }
 }]);

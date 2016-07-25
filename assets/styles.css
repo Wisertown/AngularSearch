@@ -2,3 +2,22 @@
 	color:black;
 	padding:4px;
 }
+.imgh{
+	max-width: 250px;
+	height:auto;
+}
+.hold{
+	width:auto;
+	height:auto;
+	padding:10px;
+	border-radius:5px;
+	border: 1px solid black;
+}
+.span{
+	display: inline-block;
+	vertical-align: top;
+}
+.img-holder{
+	width:auto !important;
+	display: inline-block;
+}
