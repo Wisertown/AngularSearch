@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
 </head>
-<body>
+<body id="body">
 	<ANY
     dir-paginate="expression | itemsPerPage: (int|expression) [: paginationId (string literal)]"
     [current-page=""]
@@ -37,6 +37,7 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 
 	<div class="container wrapper" ng-controller="DbController">
+		
 		<dir-pagination-controls
     [max-size=""]
     [direction-links=""]
