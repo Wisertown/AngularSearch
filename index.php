@@ -42,10 +42,17 @@
 		<div ng-repeat="detail in details| filter:query |orderBy: 'year'">
 			<div class="hold">
 				<div class="img-holder"><img src="{{detail.photoURL}}" alt="car" class="imgh"></div>
-				<span class="span">Year: {{detail.year}}</span>
-				<span class="span">Make: {{detail.make}}</span>
-				<span class="span">Model: {{detail.model}}</span>
-				<span class="span" id='number-default'>Mileage: {{detail.mileage | number}}</span>
+				<div class="cards">
+					<div class="titleCar">
+					<span class="span">{{detail.year}}</span>
+					<span class="span">{{detail.make}}</span>
+					<span class="span">{{detail.model}}</span>
+					</div>
+					<div class="cardata">
+					<span class="spanm" id='number-default'>Mileage: {{detail.mileage | number}}</span>
+					<p id='comms'>Comments:{{detail.comments}}</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		</div>

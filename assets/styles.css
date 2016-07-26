@@ -13,11 +13,39 @@
 	border-radius:5px;
 	border: 1px solid black;
 }
+.cardata{
+	width:75%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+div.cards{
+	width:75%;
+	display:inline-block;
+	vertical-align: top;
+}
 .span{
 	display: inline-block;
 	vertical-align: top;
 }
+.spanm{
+	display: inline-block;
+	vertical-align: top;
+	width:auto;
+}
+#comms{
+	width:auto;
+	display:block;
+	max-width: 70%;
+}
 .img-holder{
 	width:auto !important;
 	display: inline-block;
+}
+.titleCar{
+	font-weight: bold;
+	font-size: 25px;
+	display:inline-block;
+	width:75%;
+	vertical-align: top;
 }
