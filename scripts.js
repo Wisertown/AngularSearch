@@ -1,3 +1,5 @@
+angular.module('myApp', ['angularUtils.directives.dirPagination']);
+
 var carApp = angular.module('carApp',[]);
 carApp.controller("DbController",['$scope','$http', function($scope,$http){
 

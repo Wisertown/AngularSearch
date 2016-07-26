@@ -19,8 +19,12 @@
 	vertical-align: top;
 	text-align: left;
 }
+.btn-hold{
+	width:auto;
+	display:inline-block;
+}
 div.cards{
-	width:75%;
+	width:50%;
 	display:inline-block;
 	vertical-align: top;
 }
@@ -36,7 +40,7 @@ div.cards{
 #comms{
 	width:auto;
 	display:block;
-	max-width: 70%;
+	width:100%;
 }
 .img-holder{
 	width:auto !important;
