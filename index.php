@@ -22,7 +22,7 @@
     [current-page=""]
     [pagination-id=""]
     [total-items=""]>
-    ...
+    
     </ANY>
 
 	<div class="container">
@@ -68,11 +68,12 @@
 					</div>
 					<div class="cardata">
 					<span class="spanm" id='number-default'>Mileage: {{detail.mileage | number}}</span>
-					<span class="spanm">VOTES: {{detail.vote}}</span>
+					
 					<p id='comms'>Comments:{{detail.comments}}</p>
 					</div>
 				</div>
-				<div class="btn-hold"><form action="post"><button class="btn-primary">VOTE</button></form></div>
+				<div class="btn-hold"><form action="post"><button class="btn btn-primary">VOTE</button></form><span class="spanm">VOTES: {{detail.vote}}</span>
+				</div>
 			</div>
 
 		</div>
