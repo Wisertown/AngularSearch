@@ -13,3 +13,13 @@ $scope.details = data;
 });
 }
 }]);
+
+$scope.insertInfo = function(info){
+$http.post('insertvote.php',{"id":detail.id,"vote":+1}).success(function(data){
+if (data == true) {
+getInfo();
+// Hide details insertion form
+$('#empForm').css('display', 'none');
+}
+});
+}

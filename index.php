@@ -72,7 +72,7 @@
 					<p id='comms'>Comments:{{detail.comments}}</p>
 					</div>
 				</div>
-				<div class="btn-hold"><form action="post"><button class="btn btn-primary">VOTE</button></form><span class="spanm">VOTES: {{detail.vote}}</span>
+				<div class="btn-hold"><form action="post" name="carlist" ng-submit="insertInfo(info);"><input type="hidden" value="{{detail.id}}" ng-model="{{cars.id}}"><button class="btn btn-primary">VOTE</button></form><span class="spanm">VOTES: {{detail.vote}}</span>
 				</div>
 			</div>
 
