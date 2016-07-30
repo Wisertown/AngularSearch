@@ -12,14 +12,21 @@ $http.get('cardetails.php').success(function(data){
 $scope.details = data;
 });
 }
-}]);
 
-$scope.insertInfo = function(info){
-$http.post('insertvote.php',{"id":detail.id,"vote":+1}).success(function(data){
+$scope.insertInfo = function(id){
+
+$http.post('insertvote.php',{"id":id}).success(function(data){
+console.log(data);
 if (data == true) {
 getInfo();
 // Hide details insertion form
-$('#empForm').css('display', 'none');
+
 }
 });
 }
+
+
+}]);
+
+
+
