@@ -64,3 +64,18 @@ div.cards{
 	width:75%;
 	vertical-align: top;
 }
+
+.intro{
+	font-size:20px;
+	color:red;
+	font-weight: bold;
+}
+
+form#empForm, form#editForm {
+padding: 0 35px 15px;
+}
+
+
+
+
+
