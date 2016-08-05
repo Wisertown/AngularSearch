@@ -5,51 +5,51 @@
 	<title>Add My First Car</title>
 </head>
 <body>
-	<form class="form-horizontal alert alert-warning" name="carList" id="carForm" ng-submit="insertCar(carInfo);" hidden>
+	<form class="form-horizontal alert alert-warning" name="carList" id="carForm" hidden>
 <h3 class="text-center">Insert Your First Car</h3>
 <div class="form-group">
 <label for="Year">Year</label>
 <input type="text" name="year" class="form-control" placeholder="Enter Year" ng-model="carInfo.year" autofocus required />
 </div>
 <div class="form-group">
-<p class="text-danger" ng-show="carlist.year.$invalid && empList.year.$dirty">Year is required</p>
+<p class="text-danger" ng-show="carlist.year.$invalid && carList.year.$dirty">Year is required</p>
 </div>
 <div class="form-group">
 <label for="Make">Make</label>
 <input type="text" name="make" class="form-control" placeholder="Enter Car Make" ng-model="carInfo.make" autofocus required />
 </div>
 <div class="form-group">
-<p class="text-danger" ng-show="carList.make.$invalid && empList.make.$dirty">Make is required</p>
+<p class="text-danger" ng-show="carList.make.$invalid && carList.make.$dirty">Make is required</p>
 </div>
 <div class="form-group">
 <label for="model">Model</label>
 <input type="text" name="year" class="form-control" placeholder="Enter Car Model" ng-model="carInfo.model" autofocus required />
 </div>
 <div class="form-group">
-<p class="text-danger" ng-show="carList.model.$invalid && empList.model.$dirty">Model is required</p>
+<p class="text-danger" ng-show="carList.model.$invalid && carList.model.$dirty">Model is required</p>
 </div>
 <div class="form-group">
 <label for="mileage">Mileage</label>
 <input type="text" name="mileage" class="form-control" placeholder="Enter Car Mileage" ng-model="carInfo.mileage" autofocus required />
 </div>
 <div class="form-group">
-<p class="text-danger" ng-show="carList.mileage.$invalid && empList.mileage.$dirty">Mileage is required</p>
+<p class="text-danger" ng-show="carList.mileage.$invalid && carList.mileage.$dirty">Mileage is required</p>
 </div>
 <div class="form-group">
 <label for="comments">Comments</label>
-<textarea type="text" name="mileage" class="form-control" placeholder="enter your comments/story" ng-model="carInfo.comments" autofocus required ></textarea>
+<textarea type="text" name="mileage" class="form-control" placeholder="enter your comments/story" ng-model="carInfo.comments"></textarea>
 </div>
 <div class="form-group">
-<p class="text-danger" ng-show="carList.mileage.$invalid && empList.mileage.$dirty">Mileage is required</p>
+<p class="text-danger" ng-show="carList.mileage.$invalid && carList.mileage.$dirty">Mileage is required</p>
 </div>
 
 <div class="form-group">
 <label for="Address">Your Photo</label>
-<input type="file" name="file" class="form-control" ng-model="carInfo.photo" autofocus required />
+<input type="file" file-model="file" class="form-control"/>
 </div>
 
 <div class="form-group">
-<button class="btn btn-warning" ng-disabled="empList.$invalid">Add Into Database</button>
+<button type="submit" class="btn btn-warning" ng-click="Submit()">Add Into Database</button>
 </div>
 </body>
 </html>

@@ -88,3 +88,5 @@
 </body>
 </html>
 <script src="scripts.js"></script>
+<script src="directives/directives.js"></script>
+<script src="directives/form.js"></script>

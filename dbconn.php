@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$table = "Pangular";
+$username = "projxatp_rooter";
+$password = "Rooter!@";
+$table = "projxatp_cars";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $table);
